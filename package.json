@@ -1,0 +1,20 @@
+{
+  "name": "umi-plugin-mobile-dumi",
+  "version": "0.0.3",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "father-build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@umijs/types": "^3.5.17",
+    "@umijs/utils": "^3.5.17"
+  },
+  "devDependencies": {
+    "father-build": "^1.20.0"
+  }
+}
