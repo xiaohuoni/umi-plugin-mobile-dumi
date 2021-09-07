@@ -1,9 +1,16 @@
-import { winPath } from '@umijs/utils';
 import type { IApi } from '@umijs/types';
 import { join } from 'path';
 import getDisplayContent from './getDisplayContent';
 
 const DIR_NAME = 'plugin-mobile-display';
+const winPath = function (path: string) {
+  const isExtendedLengthPath = /^\\\\\?\\/.test(path);
+  if (isExtendedLengthPath) {
+    return path;
+  }
+
+  return path.replace(/\\/g, '/');
+}
 
 export default (api: IApi) => {
 
