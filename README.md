@@ -1,6 +1,6 @@
 # umi-plugin-mobile-dumi
 
-dumi 中用于展示全部组件的插件，需要使用 `dumi-theme-mobile`,否则可能导致数据不一致。
+dumi 中用于展示全部组件的插件。
 
 安装即使用，增加了可访问路由 /all-components
 
