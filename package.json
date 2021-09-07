@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-mobile-dumi",
-  "version": "0.0.3",
+  "version": "0.0.9",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -11,10 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@umijs/types": "^3.5.17",
     "@umijs/utils": "^3.5.17"
   },
+  "peerDependencies": {
+    "antd-mobile": "^5.0.0-beta.4"
+  },
   "devDependencies": {
+    "@umijs/types": "^3.5.17",
     "father-build": "^1.20.0"
   }
 }
