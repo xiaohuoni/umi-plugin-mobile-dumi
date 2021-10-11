@@ -10,25 +10,22 @@ const winPath = function (path: string) {
   }
 
   return path.replace(/\\/g, '/');
-}
+};
 
 export default (api: IApi) => {
-
+  const { title = '' } = api.userConfig;
   api.onGenerateFiles(() => {
     api.writeTmpFile({
       path: join(DIR_NAME, 'display.tsx'),
-      content: getDisplayContent(),
+      content: getDisplayContent(title),
     });
   });
 
   api.modifyRoutes((routes) => {
     routes.unshift({
       path: '/all-components',
-      component: winPath(
-        join(api.paths.absTmpPath || '', DIR_NAME, 'display.tsx'),
-      ),
-    })
+      component: winPath(join(api.paths.absTmpPath || '', DIR_NAME, 'display.tsx')),
+    });
     return routes;
   });
-
 };
