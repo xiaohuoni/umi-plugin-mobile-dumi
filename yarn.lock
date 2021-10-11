@@ -1698,7 +1698,7 @@
     "@umijs/utils" "3.5.17"
     webpack-chain "6.5.1"
 
-"@umijs/utils@3.5.17", "@umijs/utils@^3.5.17":
+"@umijs/utils@3.5.17":
   version "3.5.17"
   resolved "https://registry.yarnpkg.com/@umijs/utils/-/utils-3.5.17.tgz#74cee75d62be2828545e25b40df20af7f8959d2c"
   integrity sha512-YydSzvl7j4AWgW5lkHDoXxKjIVA940fmdi6IavXRXGkWat4cLZAQZ7ERCCrmW7wSznLwOvzicsQbLTLK8OeO0w==
