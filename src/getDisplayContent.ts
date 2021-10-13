@@ -5,7 +5,8 @@ import { IndexBar, List } from 'antd-mobile';
 import ComponentConfig from '@@/dumi/config';
 import DemosConfig from '@@/dumi/demos';
 
-const components = ComponentConfig['menus']['en-US']['/components'];
+const keys = Object.keys(ComponentConfig['menus'])
+const components = ComponentConfig['menus'][keys[0]]['/components'];
 const styleInject = (): void => {
   const css =
     \`.mobile-display .adm-index-bar .adm-index-bar-sidebar .adm-index-bar-sidebar-row .adm-index-bar-sidebar-item{
